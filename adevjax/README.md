@@ -1,6 +1,6 @@
 # adevjax
 
-![Overview of ADEV](figures/adev-diagram.png)
+![Overview of ADEV](https://raw.githubusercontent.com/femtomc/programmable-vi-pldi-2024/main/adevjax/figures/adev-diagram.png)
 
 > A JAX encoding of
 > [ADEV: Sound Automatic Differentiation of Expected Values of Probabilistic Programs](https://arxiv.org/pdf/2212.06386.pdf).
@@ -42,7 +42,7 @@ ADEV goes beyond standard AD by explicitly supporting probabilistic primitives
 ignored, standard AD may produce incorrect results, as this figure from our
 paper illustrates:
 
-![Optimizing an example loss function using ADEV](figures/example.png)
+![Optimizing an example loss function using ADEV](https://raw.githubusercontent.com/femtomc/programmable-vi-pldi-2024/main/adevjax/figures/example.png)
 
 In this example, standard AD fails to account for the parameter $\theta$'s
 effect on the _probability_ of entering each branch. ADEV, by contrast,

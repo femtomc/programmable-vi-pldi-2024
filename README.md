@@ -3,7 +3,7 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10806202.svg)](https://doi.org/10.5281/zenodo.10806202)
 
 This repository contains the JAX implementation that accompanies the paper
-[_Probabilistic programming with programmable variational inference_](./pldi24_programmable_vi_original_submit.pdf),
+[_Probabilistic programming with programmable variational inference_](https://github.com/femtomc/programmable-vi-pldi-2024/blob/main/pldi24_programmable_vi_original_submit.pdf),
 as well as the experiments used to generate figures and numbers in the empirical
 evaluation section.
 
@@ -390,7 +390,7 @@ Batch sizes: [64, 128, 256, 512, 1024]
 
 which we used to produce Table 1:
 
-![table_1](table_1.png)
+![table_1](https://raw.githubusercontent.com/femtomc/programmable-vi-pldi-2024/main/table_1.png)
 
 The "columns" of the print out match to the batch size column: for each timing
 experiment, the first array in the tuple returned by the print out is the row of
@@ -412,12 +412,12 @@ specific numbers may depend on your runtime environment -- but the general
 trend, that our timings are orders of magnitude faster than Pyro, doesn't depend
 on runtime):
 
-![table_2_print_out](table_2_print_out.png)
+![table_2_print_out](https://raw.githubusercontent.com/femtomc/programmable-vi-pldi-2024/main/table_2_print_out.png)
 
 We took the `Mean` and `StdDev` column numbers to generate the results (of form
 $\text{Mean} \pm \text{StdDev}$) in our report's Table 2.
 
-![table_fn](table_2.png)
+![table_fn](https://raw.githubusercontent.com/femtomc/programmable-vi-pldi-2024/main/table_2.png)
 
 The labels and the numbers for the columns in Table 2 are mapped from the named
 rows in the print out, according to the `Mean` and `StdDev` column numbers (as
@@ -484,7 +484,7 @@ Pyro IWAE(K = 5):
 the first element is the mean objective value over optimization, and the second
 is the standard deviation. We use these numbers to generate Table 4:
 
-![table_4](table_4.png)
+![table_4](https://raw.githubusercontent.com/femtomc/programmable-vi-pldi-2024/main/table_4.png)
 
 A few things to note:
 
