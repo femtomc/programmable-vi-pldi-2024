@@ -46,7 +46,7 @@ table_4:
   poetry run python experiments/table_4_objective_values/genjax_cone_marginal.py
   poetry run python experiments/table_4_objective_values/numpyro_cone.py
   poetry run python experiments/table_4_objective_values/pyro_cone.py
-  
+
 run_all:
   @just fig_2
   @just table_4
