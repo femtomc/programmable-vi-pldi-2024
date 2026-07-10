@@ -122,6 +122,13 @@ For guidance on usage of the exact library version included in this artifact,
 please instead see our included tutorial notebook on
 [using and extending `genjax.vi`](./extending_our_work.ipynb).
 
+## Binary assets
+
+Binary assets (the README tables and diagrams, the talk media, and the submitted
+PDF) stay untracked in the monorepo and resolve mechanically: `just assets`
+fetches every file pinned in `assets.txt` from the GitHub mirror and verifies
+its sha256.
+
 ## Reproducing the paper's claims
 
 We have provided code to reproduce all of the experiments in the paper, namely
