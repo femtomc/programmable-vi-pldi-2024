@@ -57,10 +57,10 @@ run_all:
 # fetch the untracked binary assets (tables, diagrams, talk media,
 # the submitted pdf) pinned in assets.txt from the GitHub mirror
 assets:
-  @while read -r sum file; do \
-    if [ ! -f "$file" ]; then \
-      mkdir -p "$(dirname "$file")"; \
-      curl -fsSL --retry 3 -o "$file" "https://raw.githubusercontent.com/femtomc/programmable-vi-pldi-2024/b1a4abe8419436e029c9d77ccec86108787c34a6/$file"; \
-      echo "$sum  $file" | sha256sum -c -; \
+  @while read -r sum remote local; do \
+    if [ ! -f "$local" ]; then \
+      mkdir -p "$(dirname "$local")"; \
+      curl -fsSL --retry 3 -o "$local" "https://raw.githubusercontent.com/femtomc/programmable-vi-pldi-2024/b1a4abe8419436e029c9d77ccec86108787c34a6/$remote"; \
+      echo "$sum  $local" | sha256sum -c -; \
     fi; \
   done < assets.txt
